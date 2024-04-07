@@ -46,7 +46,7 @@ public class MainApp {
             return;
         }
         
-        if (operator == '/' && !isValidDivision(angka2)) {
+        if (operator == '4' && !isValidDivision(angka2)) {
             System.out.println("Error: Tidak dapat melakukan pembagian dengan nol");
             scanner.close();
             return;
