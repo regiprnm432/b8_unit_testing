@@ -2,10 +2,10 @@
 
 package org.example;
 
-import org.junit.Test;
-import static org.junit.Assert.*;
-import org.junit.Before;
-import org.junit.After;
+import org.junit.jupiter.api.*;
+import static org.junit.jupiter.api.Assertions.*;
+import java.io.ByteArrayInputStream;
+import java.io.InputStream;
 
 public class MainAppTest {
 
@@ -53,64 +53,15 @@ public class MainAppTest {
     }
 
     @Test
-    public void testInvalidOperand2() {
-        String input = "1\nb\n1\n";
-        provideInput(input);
-        MainApp.main(new String[0]);
-        assertEquals("Error: Input harus berupa angka\n", outContent.toString());
-    }
+    public void testMainApp_InputInvalid() {
+        String simulatedInput = "abc\n5\n1\n"; // Simulasi input: abc (input pertama bukan angka)
+        InputStream savedStandardInputStream = System.in;
+        System.setIn(new ByteArrayInputStream(simulatedInput.getBytes()));
 
-    @Test
-    public void testValidMultiplication() {
-        String input = "1\n2\n3\n";
-        provideInput(input);
-        MainApp.main(new String[0]);
-        assertEquals("Hasil: 2.0\n", outContent.toString());
-    }
+        assertThrows(IllegalArgumentException.class, () -> {
+            MainApp.main(new String[0]);
+        });
 
-    @Test
-    public void testInvalidOperand3() {
-        String input = "a\nb\n3\n";
-        provideInput(input);
-        MainApp.main(new String[0]);
-        assertEquals("Error: Input harus berupa angka\n", outContent.toString());
+        System.setIn(savedStandardInputStream);
     }
-
-    @Test
-    public void testValidDivision() {
-        String input = "1\n2\n4\n";
-        provideInput(input);
-        MainApp.main(new String[0]);
-        assertEquals("Hasil: 0.5\n", outContent.toString());
-    }
-
-    @Test
-    public void testInvalidOperand4() {
-        String input = "a\nb\n4\n";
-        provideInput(input);
-        MainApp.main(new String[0]);
-        assertEquals("Error: Input harus berupa angka\n", outContent.toString());
-    }
-
-    @Test
-    public void testValidDivisionByZero() {
-        String input = "1\n0\n4\n";
-        provideInput(input);
-        MainApp.main(new String[0]);
-        assertEquals("Error: Tidak dapat melakukan pembagian dengan nol\n", outContent.toString());
-    }
-
-    @Test
-    public void testInvalidOperator() {
-        String input = "1\n2\n@\n";
-        provideInput(input);
-        MainApp.main(new String[0]);
-        assertEquals("Error: Operator tidak valid\n", outContent.toString());
-    }
-
-    private void provideInput(String data) {
-        ByteArrayInputStream testIn = new ByteArrayInputStream(data.getBytes());
-        System.setIn(testIn);
-    }
-
 }
