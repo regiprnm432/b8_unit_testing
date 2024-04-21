@@ -1,22 +1,22 @@
+// MainAppTest.java
+
 package org.example;
 
+import org.junit.Test;
 import static org.junit.Assert.*;
-import org.junit.*;
-import java.io.*;
-import java.util.*;
+import org.junit.Before;
+import org.junit.After;
 
 public class MainAppTest {
 
-    private ByteArrayOutputStream outContent;
-    private ByteArrayOutputStream errContent;
+    private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
+    private final ByteArrayOutputStream errContent = new ByteArrayOutputStream();
+    private final InputStream originalIn = System.in;
     private final PrintStream originalOut = System.out;
     private final PrintStream originalErr = System.err;
-    private final InputStream originalIn = System.in;
 
     @Before
     public void setUpStreams() {
-        outContent = new ByteArrayOutputStream();
-        errContent = new ByteArrayOutputStream();
         System.setOut(new PrintStream(outContent));
         System.setErr(new PrintStream(errContent));
     }
