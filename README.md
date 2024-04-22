@@ -20,8 +20,8 @@ Untuk menjalankan program kami, ikuti langkah-langkah di bawah ini:
 
 ## Anggota Kelompok
 
-- Helsa Alika Femiani - 2115240
-- Novia Nur Azizah - 2115240
+- Helsa Alika Femiani - 211524044
+- Novia Nur Azizah - 211524053
 - Regi Purnama - 211524057
 
 ## Cara Berkontribusi
