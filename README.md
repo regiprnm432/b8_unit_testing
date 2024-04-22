@@ -11,7 +11,7 @@ Proyek ini bertujuan untuk melakukan automation testing dengan tools Junit5 dan 
 
 Untuk menjalankan program kami, ikuti langkah-langkah di bawah ini:
 
-1. Pastikan Anda telah menginstal Java 21 dan Gradle 8.7.
+1. Pastikan Anda telah menginstal Java 21 dan Gradle 8.7
 2. Clone repositori ini ke komputer lokal Anda menggunakan perintah `git clone https://github.com/noviazizah/AutomationTesting.git`.
 3. Buka terminal atau command prompt, lalu pindah ke direktori proyek (`cd AutomationTesting`).
 4. Jalankan perintah `./gradlew build` untuk build program setelah clone.
@@ -20,9 +20,9 @@ Untuk menjalankan program kami, ikuti langkah-langkah di bawah ini:
 
 ## Anggota Kelompok
 
-- [Helsa Alika Femiani - 2115240]
-- [Novia Nur Azizah - 2115240]
-- [Regi Purnama - 211524057]
+- Helsa Alika Femiani - 2115240
+- Novia Nur Azizah - 2115240
+- Regi Purnama - 211524057
 
 ## Cara Berkontribusi
 
