@@ -35,6 +35,3 @@ Kami menyambut kontribusi dari siapa saja! Jika Anda ingin berkontribusi, silaka
 5. Push ke branch Anda (`git push origin fitur-baru`).
 6. Buat permintaan tarik (pull request) baru.
 
-## Lisensi
-
-Proyek ini dilisensikan di bawah [tuliskan jenis lisensi Anda di sini]. Lihat file `LISENSI` untuk informasi lebih lanjut.
