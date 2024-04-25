@@ -19,7 +19,7 @@ Untuk menjalankan program kami, ikuti langkah-langkah di bawah ini:
 
 
 # Struktur Folder Project
-
+'''
 /app
 │   /bin
 │
@@ -59,7 +59,7 @@ Untuk menjalankan program kami, ikuti langkah-langkah di bawah ini:
 │           └── build.gradle
 │
 └── /gradle
-
+'''
 
 
 ## Anggota Kelompok
