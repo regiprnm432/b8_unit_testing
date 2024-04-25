@@ -7,7 +7,7 @@ Selamat datang di repositori Kelompok B8!
 Proyek ini bertujuan untuk melakukan automation testing dengan tools Junit5 dan Gradle pada program Kalkulator.
 
 
-# Cara Menjalankan Program
+## Cara Menjalankan Program
 
 Untuk menjalankan program kami, ikuti langkah-langkah di bawah ini:
 
