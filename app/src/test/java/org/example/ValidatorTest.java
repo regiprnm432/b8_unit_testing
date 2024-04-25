@@ -40,6 +40,14 @@ public class ValidatorTest {
     }
 
     @Test
+    public void testValidateInput_Numeric() {
+        assertDoesNotThrow(() -> {
+            Validator.validateInput("432");
+        });
+        System.out.println("Test case: testValidateInput_Numeric passed");
+    }
+    
+    @Test
     public void testValidateInput_OutOfRangePlus() {
         IllegalArgumentException exception = assertThrows(IllegalArgumentException.class, () -> {
             Validator.validateInput("1000000");
@@ -58,6 +66,14 @@ public class ValidatorTest {
     }
 
     @Test
+    public void testValidateInput_InRange() {
+        assertDoesNotThrow(() -> {
+            Validator.validateInput("120");
+        });
+        System.out.println("Test case: testValidateInput_InRange passed");
+    }
+
+    @Test
     public void testValidateOperator_InvalidOperator() {
         IllegalArgumentException exception = assertThrows(IllegalArgumentException.class, () -> {
             Validator.validateOperator('8', 10);
@@ -67,19 +83,19 @@ public class ValidatorTest {
     }
 
     @Test
+    public void testValidateOperator_ValidOperator() {
+        // This test case should not throw an exception
+        Validator.validateOperator('1', 10);
+        System.out.println("Test case: testValidateOperator_ValidOperator passed");
+    }
+
+    @Test
     public void testValidateOperator_DivisionByZero() {
         IllegalArgumentException exception = assertThrows(IllegalArgumentException.class, () -> {
             Validator.validateOperator('4', 0);
         });
         System.out.println("Test case: testValidateOperator_DivisionByZero passed");
         System.out.println("Exception message: " + exception.getMessage());
-    }
-
-    @Test
-    public void testValidateOperator_ValidOperator() {
-        // This test case should not throw an exception
-        Validator.validateOperator('1', 10);
-        System.out.println("Test case: testValidateOperator_ValidOperator passed");
     }
 
     @Test
