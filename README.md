@@ -18,7 +18,7 @@ Untuk menjalankan program kami, ikuti langkah-langkah di bawah ini:
 5. Setelah berhasil dibuild, jalankan perintah `./gradlew test` untuk mengenerate test script.
 
 
-# Struktur Folder Project
+## Struktur Folder Project
 ```
 /app
 │   /bin
@@ -60,6 +60,9 @@ Untuk menjalankan program kami, ikuti langkah-langkah di bawah ini:
 │
 └── /gradle
 ```
+- Source code program kalkulator dapat diakses di app/src/main/java/org/example
+- Test script dapat diakses diakses di app/src/test/java/org/example
+- Test Report Generated dapat diakses di app/build/tests/test
 
 ## Anggota Kelompok
 
