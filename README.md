@@ -18,6 +18,50 @@ Untuk menjalankan program kami, ikuti langkah-langkah di bawah ini:
 5. Setelah berhasil dibuild, jalankan perintah `./gradlew test` untuk mengenerate test script.
 
 
+# Struktur Folder Project
+
+/app
+│   /bin
+│
+├── /build
+│   ├── /classes
+│   │   ├── /generated
+│   │   ├── /reports
+│   │   ├── /tests
+│   │   │   ├── /test
+│   │   │   │   ├── /classes
+│   │   │   │   ├── /css
+│   │   │   │   ├── /js
+│   │   │   │   ├── /package
+│   │   │   │   ├── index.html
+│   │   │   ├── /test-results
+│   │   │   └── /tmp
+│   │
+│   └── /src
+│       ├── /main
+│       │   ├── /java
+│       │   │   └── /org
+│       │   │       └── /example
+│       │   │           ├── Computation.java
+│       │   │           ├── MainApp.java
+│       │   │           ├── Operator.java
+│       │   │           └── Validator.java
+│       │
+│       └── /test
+│           ├── /java
+│           │   └── /org
+│           │       └── /example
+│           │           ├── ComputationTest.java
+│           │           ├── MainAppTest.java
+│           │           ├── OperatorTest.java
+│           │           └── ValidatorTest.java
+│           │
+│           └── build.gradle
+│
+└── /gradle
+
+
+
 ## Anggota Kelompok
 
 - Helsa Alika Femiani - 211524044
