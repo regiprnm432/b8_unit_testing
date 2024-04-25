@@ -87,7 +87,7 @@ Untuk menjalankan program kami, ikuti langkah-langkah di bawah ini:
 
 ![Test Summary ComputationTest](https://drive.google.com/file/d/1Cl_BYHRFoQ_4KWFemgfqMXDrFzIa_A8P/view?usp=drive_link)
 
-![Test Summary ValidatorTest](https://drive.google.com/file/d/1fweIJwW-V1iF0yxW1D1tcSMAhSS7233M/view)
+![Test Summary ValidatorTest](https://drive.google.com/file/d/1fweIJwW-V1iF0yxW1D1tcSMAhSS7233M)
 
 ## Cara Berkontribusi
 
