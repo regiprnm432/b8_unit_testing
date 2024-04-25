@@ -6,6 +6,11 @@ Selamat datang di repositori Kelompok B8!
 
 Proyek ini bertujuan untuk melakukan automation testing dengan tools Junit5 dan Gradle pada program Kalkulator.
 
+## Anggota Kelompok
+
+- Helsa Alika Femiani - 211524044
+- Novia Nur Azizah - 211524053
+- Regi Purnama - 211524057
 
 ## Cara Menjalankan Program
 
@@ -64,11 +69,14 @@ Untuk menjalankan program kami, ikuti langkah-langkah di bawah ini:
 - Test script dapat diakses diakses di app/src/test/java/org/example
 - Test Report Generated dapat diakses di app/build/tests/test
 
-## Anggota Kelompok
+## Item Pengujian
+| No. | Class       | Method               | Total Test Case |
+|-----|-------------|----------------------|-----------------|
+| 1   | MainApp     | Main                 | 10              |
+| 2   | Operator    | tambah<br>kurang<br>kali<br>bagi | 17              |
+| 3   | Computation | compute              | 5               |
+| 4   | Validator   | isNumeric<br>isInRange<br>isValidOperator<br>isValidDivision<br>validateInput<br>validateOperator | 13              |
 
-- Helsa Alika Femiani - 211524044
-- Novia Nur Azizah - 211524053
-- Regi Purnama - 211524057
 
 ## Cara Berkontribusi
 
